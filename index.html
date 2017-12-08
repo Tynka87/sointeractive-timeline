@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ 
+
+    <title>Timeline</title>
+</head>
+
+<body>
+    <div class='timeline'>
+        <div class='axis'>
+
+        </div>
+        <div class='events'>
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    <script id="template" type="x-tmpl-mustache">
+        <li>
+            <div class='point'>
+                <i class='fa {{icon}} fa-2x' aria-hidden="true"></i>
+            </div>
+            <div class='tooltip'>
+                <p class='date'>{{tooltipDate}}</p>
+                <p>{{tooltipText}}</p>
+            </div>
+
+        </li>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <script type="text/javascript" src="js/javaScript.js"></script>
+</body>
+
+</html>
